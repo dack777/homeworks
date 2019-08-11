@@ -1,0 +1,76 @@
+.hero
+	background-color: $hero-back
+	&-block
+		display: flex
+		justify-content: space-between 
+		padding: 48px 0 52px 0  
+	&-text 
+		width: 50% 
+		&__title
+			+bold 
+			font-size: 41px
+			line-height: 55px
+			margin-bottom: 0
+		&__subtitle 
+			+bold 
+			font-size: 20px
+			line-height: 65px
+			margin-bottom: 48px
+			margin-top: 18px
+	&-list 
+		padding: 0
+		margin: 0
+		&__item 
+			display: flex
+			align-items: center 
+			margin-bottom: 22px
+			&:last-child 
+				margin-bottom: 0 
+		&__image 
+			margin-right: 30px 
+		&__text
+			font-size: 14px
+			line-height: 24px
+			max-width: 232px
+			margin: 0
+
+@media (max-width: 1200px)
+	.hero 
+		&-block 
+			flex-direction: column 
+		&-list 
+			margin-bottom: 44px
+		&-text 
+			width: 100% 
+			padding-right: 10px
+			&__subtitle 
+				line-height: 1.4
+				margin-bottom: 30px
+
+@media (max-width: 768px)
+	.hero 
+		&-image 
+			margin-right: 25px 
+		&-block 
+			margin-left: 27px 
+			padding: 25px 0 52px 0 
+		&-text 
+			&__title 
+				font-size: 24px 
+				line-height: 1.2 
+				margin-bottom: 5px
+			&__subtitle 
+				font-size: 16px
+				margin: 0 
+				max-width: 200px 
+				line-height: 1.3 
+		&-list 
+			margin-top: 28px 
+			margin-bottom: 38px 
+			&__item 
+				margin-bottom: 20px
+			&__text 
+				font-size: 12px 
+				line-height: 1.2 
+			&__image 
+				margin-right: 13px

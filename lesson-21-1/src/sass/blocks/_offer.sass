@@ -1,0 +1,177 @@
+.offer 
+	background: url('../img/offer/kuhna.png')
+	background-position: center right 
+	background-size: contain 
+	position: relative 
+	// background-repeat: no-repeat
+	// .container 
+	// 	margin: 0 
+	&:before 
+		content: '' 
+		width: 50% 
+		height: 100% 
+		position: absolute 
+		top: 0 
+		left: 0 
+		background-color: #ffffff
+	&-block 
+		width: 50% 
+		position: relative 
+		padding: 70px 90px 94px 0 
+.section-title
+	+bold 
+	max-width: 360px 
+	line-height: 35px 
+	margin-bottom: 24px 
+	height: 94px
+	font-size: 24px
+	margin: 0 
+.section-subtitle 
+	max-width: 250px 
+	margin-bottom: 30px 
+	height: 36px
+	font-size: 16px
+	display: block 
+	margin-top: 30px 
+.offer__form 
+	max-width: 500px 
+.offer__input
+	margin-bottom: 30px 
+	width: 240px
+	height: 65px
+	border-radius: 10px
+	border: 1px solid #dddddd
+	outline: none 
+	padding-left: 26px 
+	font-size: 15px
+	box-sizing: border-box 
+	&:first-child 
+		margin-right: 14px
+	&:focus 
+		border: 1px solid orange    
+.offer-button 
+	+bold 
+	font-size: 16px
+	width: 100% 
+	min-height: 70px 
+	max-width: 495px
+	padding-bottom: 5px 
+	outline: none 
+.offer-footer 
+	display: flex 
+	justify-content: space-between 
+	max-width: 486px 
+	margin-top: 25px
+	&__subtitle 
+		max-width: 230px
+		font-size: 15px
+		line-height: 24px
+	&__contacts 
+		display: flex 
+		flex-direction: column 
+	&__link 
+		+bold 
+		font-size: 15px
+		line-height: 24px
+		text-decoration: none 
+		color: $text-color
+
+@media (max-width: 1200px)
+	.section-title
+		max-width: 300px 
+		font-size: 20px 
+	.offer 
+		background-size: cover 
+		// &__input 
+		// 	width: 100% 
+		// 	margin-bottom: 10px 
+		&-button 
+			font-size: 14px 
+			outline: none
+			max-width: 290px  
+		&__input 
+			width: 290px 
+			margin-bottom: 15px 
+		&-footer 
+			max-width: 290px 
+			margin-top: 15px 
+			&__subtitle 
+				line-height: 1.4 
+				font-size: 16px 
+
+@media (max-width: 768px)
+	.offer 
+		background: #ffffff 
+		&-block 
+			width: 100% 
+			padding-right: 0 
+
+@media (max-width: 576px) 
+	.offer 
+		background: #ffffff 
+		&-block 
+			width: 100% 
+			padding: 46px 25px 56px 20px 
+	.section-title
+		+bold 
+		max-width: 260px 
+		line-height: 1.2 
+		height: 61px
+		font-size: 18px
+		margin: 0 
+	.section-subtitle 
+		max-width: 203px 
+		margin-bottom: 27px 
+		height: 31px
+		font-size: 14px
+		display: block 
+		margin-top: 20px 
+	.offer__form 
+		display: flex 
+		flex-direction: column 
+	.offer__input
+		width: 250px
+		height: 65px
+		border-radius: 10px
+		border: 1px solid #dddddd
+		outline: none 
+		padding-left: 23px 
+		font-size: 15px
+		margin-bottom: 5px 
+		box-sizing: content-box 
+		&:first-child 
+			margin-right: 0
+		&:last-child 
+			margin-bottom: 8px
+		&:focus 
+			border: 1px solid orange    
+	.offer-button 
+		+bold 
+		font-size: 14px
+		width: 100% 
+		min-height: 69px 
+		max-width: 275px
+		margin-bottom: 5px 
+		padding: 19px 62px 
+		outline: none 
+		line-height: 18px 
+	.offer-footer 
+		display: flex 
+		// justify-content: space-between
+		flex-direction: column  
+		max-width: 234px 
+		margin-left: 5px 
+		&__subtitle 
+			font-size: 15px
+			line-height: 24px
+		&__subtitle-1
+			margin-bottom: 5px 
+		&__contacts 
+			display: flex 
+			flex-direction: column 
+		&__link 
+			+bold 
+			font-size: 15px
+			line-height: 24px
+			text-decoration: none 
+			color: $text-color
